@@ -15,6 +15,6 @@ class Subseq{
     }
 
     public static void main(String args[]){
-        subseq(" " , "abcd");
+        subseq(" " , "abcded");
     }
 }
