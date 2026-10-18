@@ -9,8 +9,7 @@ class DJ {
 
             if (arr[i] < arr.length && arr[i] != arr[arr[i]]) {
                 swap(arr, i, arr[i]);
-            }
-            else {
+            } else {
                 i++;
             }
         }
@@ -22,31 +21,31 @@ class DJ {
         arr[end] = temp;
     }
 
-    static ArrayList<Integer> missingno(int arr[]){
+    static ArrayList<Integer> missingno(int arr[]) {
         ArrayList<Integer> list = new ArrayList<>(arr.length);
 
-        for (int  i = 0 ; i < arr.length ; i ++){
-            if (arr[i] != i){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != i) {
                 list.add(i);
             }
         }
-        return list ;
+        return list;
     }
 
-    static ArrayList<Integer> duplicateno(int[] arr){
+    static ArrayList<Integer> duplicateno(int[] arr) {
         ArrayList<Integer> list = new ArrayList<>(arr.length);
 
-        for (int  i = 0 ; i < arr.length ; i ++){
-            if (arr[i] != i){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != i) {
                 list.add(arr[i]);
             }
         }
-        return list ;
+        return list;
     }
 
     public static void main(String args[]) {
         int[] arr = {
-                4,3,2,7,8,2,3,1,0
+                4, 3, 2, 7, 8, 2, 3, 1, 0
         };
 
         cyclicsort(arr);
@@ -54,6 +53,6 @@ class DJ {
         System.out.println(Arrays.toString(arr));
 
         System.out.println("The duplicateno is: " + duplicateno(arr));
-        System.out.println("The missing no is: " + missingno(arr)) ;
+        System.out.println("The missing no is: " + missingno(arr));
     }
 }

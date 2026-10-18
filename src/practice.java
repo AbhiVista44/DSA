@@ -5,8 +5,8 @@ class Practice {
         System.out.println("Hello World");
 
         // Print "Nvidia" 5 times
-        int j = 5;
-        for (int i = 1; i <= j; i++) {
+
+        for (int i = 1; i <= 5; i++) {
             System.out.println("Nvidia");
         }
 
